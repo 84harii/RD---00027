@@ -2692,8 +2692,8 @@ form input.margin-l, form textarea.margin-l {
 @supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
   .popup__content {
     background-color: rgba(255, 255, 255, 0.05);
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(84px);
+            backdrop-filter: blur(84px);
   }
 }
 @supports not ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
@@ -3109,11 +3109,11 @@ form input.margin-l, form textarea.margin-l {
 .my-gallery__image {
   opacity: 1;
 }
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .my-gallery__image {
     opacity: 0;
   }
-}
+} */
 
 .my-gallery__description {
   position: absolute;
@@ -3244,4 +3244,17 @@ form input.margin-l, form textarea.margin-l {
 
 .pswp--zoom-allowed .pswp__img{
   object-fit: contain;
+}
+
+
+/* ------------------------------------------------*/
+/* Custom CSS Start */
+/* ------------------------------------------------*/
+
+@media (max-width:540px){
+  .media-full-4 {
+    background-image: url("../img/custom images/banner.jpg");
+    background-size: contain !important;
+    background-position: bottom !important;
+}
 }
